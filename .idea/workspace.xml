@@ -44,6 +44,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jędrzej\Desktop\pythonProject\NYPD-Final-assignment\analize" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="NYPD-Final-assignment" />
@@ -106,6 +111,7 @@
       <workItem from="1677683541615" duration="10000" />
       <workItem from="1678115720886" duration="44000" />
       <workItem from="1678115795277" duration="5935000" />
+      <workItem from="1678211001002" duration="8687000" />
     </task>
     <servers />
   </component>
@@ -113,6 +119,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/NYPD_Final_assignment$main.coverage" NAME="main Coverage Results" MODIFIED="1678121011640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NYPD_Final_assignment$main.coverage" NAME="main Coverage Results" MODIFIED="1678219726106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
