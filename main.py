@@ -6,9 +6,6 @@ parser = argparse.ArgumentParser()
 parser.add_argument("gdp_input_file", help="path to file with gdp data")
 parser.add_argument("pop_input_file", help="path to file with population data")
 parser.add_argument("co2_input_file", help="path to file with co2 emissions data")
-parser.add_argument(
-    "count_lines", type=int, default=10, nargs="?", help="Number of lines to be copied, default 10"
-)
 parser.add_argument('-start', type=int)
 parser.add_argument('-koniec', type=int)
 
@@ -58,29 +55,8 @@ zad1(df)
 zad2(df)
 zad3(df)
 
-# #scratch pad
-# # """#find country with max CO2 for each year
-# max_co2_countries = []
-# for year in common_years:
-#     max_co2_country = co2[str(year)].idxmax()
-#     max_co2_countries.append(max_co2_country)
-
-# print(max_co2_countries)
-
-# """
-
-# """# find max CO2 for each year
-# max_co2_countries = []
-# for year in common_years:
-#     max_co2_country = df[str(year)].idxmax()[0]
-#     max_co2_countries.append(max_co2_country)
-
-
-# # print results
-# for year, country in zip(common_years, max_co2_countries):
-#     print(f"The country with the highest CO2 emissions in {year} was {country}.")
-files = {
+"""files = {
     'GDP': 'API_NY.GDP.MKTP.CD_DS2_en_csv_v2_4751562/API_NY.GDP.MKTP.CD_DS2_en_csv_v2_4751562.csv',
     'POP': 'API_SP.POP.TOTL_DS2_en_csv_v2_4751604/API_SP.POP.TOTL_DS2_en_csv_v2_4751604.csv',
     'co2_emissions': 'co2-fossil-by-nation_zip/data/fossil-fuel-co2-emissions-by-nation_csv.csv'
-}
+}"""

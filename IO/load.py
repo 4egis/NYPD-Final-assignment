@@ -2,12 +2,6 @@ import pandas as pd
 import numpy as np
 
 
-files = {
-    'GDP': 'API_NY.GDP.MKTP.CD_DS2_en_csv_v2_4751562/API_NY.GDP.MKTP.CD_DS2_en_csv_v2_4751562.csv',
-    'POP': 'API_SP.POP.TOTL_DS2_en_csv_v2_4751604/API_SP.POP.TOTL_DS2_en_csv_v2_4751604.csv',
-    'co2_emissions': 'co2-fossil-by-nation_zip/data/fossil-fuel-co2-emissions-by-nation_csv.csv'
-}
-
 def load_file(path):
     df = pd.read_csv(path)
     return df
@@ -29,7 +23,7 @@ def load_and_preprocess_data(gdp_file, pop_file, co2_file, start = None, koniec 
     if start != None and koniec != None:
         if start >= koniec:
             raise Exception("start >= koniec")
-        elif start - koniec < 10:
+        elif koniec - start < 10:
             raise Exception("start - koniec < 10, nie moge obliczyc zad3")
         elif start < min(co2_years):
             start = min(co2_years)

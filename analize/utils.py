@@ -20,7 +20,6 @@ def find_highest_co2_per_capita(df):
                 ratio = np.nan
             else: # Jeśli obie wartości istnieja, to obliczam stosunek
                 ratio = co2/pop
-
             # Zapisuję ten stosunek w odpowiednim miejscu w dataframe
             co2_per_capita.at[country, year] = ratio
 
@@ -172,7 +171,7 @@ def test_first_task(df):
     # wybieram wartosci tylko dla tych kolumn, czyli 5 nazw krajów
     # porównuje długosc np.array z tymi nazwami krajów - len(result[cols].iloc[i].values)
     # do długosci unikalnych wartosci w tej liście - len(np.unique(result[cols].iloc[i].values))
-    # czyli sprawdzam, czy kazda wartosc na tej liscie jest unikalna
+    # sprawdzam, czy kazda wartosc na tej liscie jest unikalna
     # i nie pojawia się przypadkowo ten sam kraj w dwoch lub wiecej kolumnach
     cols = [col for col in result.columns if 'Kraj' in col]
     for i in range(len(result)):
